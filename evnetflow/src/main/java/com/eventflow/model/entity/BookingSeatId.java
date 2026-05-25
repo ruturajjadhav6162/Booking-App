@@ -1,4 +1,4 @@
-package com.eventflow.entity;
+package com.eventflow.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;

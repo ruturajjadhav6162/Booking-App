@@ -1,6 +1,5 @@
-package com.eventflow.entity;
+package com.eventflow.model.entity;
 
-import com.java.com.eventflow.model.entity.Booking;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;

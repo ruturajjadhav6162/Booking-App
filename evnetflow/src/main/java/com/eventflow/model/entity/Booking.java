@@ -1,6 +1,6 @@
-package com.eventflow.entity;
+package com.eventflow.model.entity;
 
-import com.eventflow.entity.enums.BookingStatus;
+import com.eventflow.model.entity.enums.BookingStatus;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

@@ -1,4 +1,4 @@
-package com.eventflow.entity.enums;
+package com.eventflow.model.entity.enums;
 
 public enum SeatStatus {
 	AVAILABLE,
