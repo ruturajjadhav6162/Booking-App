@@ -1,4 +1,4 @@
-package com.eventflow.dto.user;
+package com.eventflow.model.dto.user;
 
 import com.eventflow.model.entity.User;
 

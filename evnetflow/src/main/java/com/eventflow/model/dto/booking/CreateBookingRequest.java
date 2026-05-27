@@ -1,4 +1,4 @@
-package com.eventflow.dto.booking;
+package com.eventflow.model.dto.booking;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;

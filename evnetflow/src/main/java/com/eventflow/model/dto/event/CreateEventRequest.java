@@ -1,4 +1,4 @@
-package com.eventflow.dto.event;
+package com.eventflow.model.dto.event;
 
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
@@ -8,7 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-public record UpdateEventRequest(
+public record CreateEventRequest(
 		@NotBlank String name,
 		@NotBlank String venue,
 		@NotNull LocalDateTime eventDate,

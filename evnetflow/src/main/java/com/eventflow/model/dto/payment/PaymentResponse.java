@@ -1,4 +1,4 @@
-package com.eventflow.dto.payment;
+package com.eventflow.model.dto.payment;
 
 import com.eventflow.model.entity.PaymentRecord;
 

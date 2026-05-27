@@ -1,4 +1,4 @@
-package com.eventflow.dto;
+package com.eventflow.model.dto;
 
 import org.springframework.data.domain.Page;
 

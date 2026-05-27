@@ -1,4 +1,4 @@
-package com.eventflow.dto.event;
+package com.eventflow.model.dto.event;
 
 import com.eventflow.model.entity.Seat;
 
