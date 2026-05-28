@@ -13,25 +13,10 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class AuthService {
-    private final UserRepository userRepository ;
+    private final CustomUserDetailsService userDetailsService;
     private final PasswordEncoder passwordEncoder;
 
     public boolean userRegister(String name, String email, String password, String role) {
-        if (userRepository.existsByEmail(email)) {
-            return false;
-        }
-        String encodedPassword = passwordEncoder.encode(password);
-        User user = User.builder()
-                .name(name)
-                .email(email)
-                .password(encodedPassword)
-                .role(role.equalsIgnoreCase("ADMIN") ? Role.ADMIN : Role.USER)
-                .build();
-        try{
-        userRepository.save(user);
-        } catch (Exception e) {
-            return false;
-        }
-        return true;
+        return userDetailsService.saveUser(name, email, passwordEncoder.encode(password), role);
     }
 }

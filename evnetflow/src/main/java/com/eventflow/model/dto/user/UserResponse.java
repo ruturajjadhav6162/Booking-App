@@ -2,8 +2,16 @@ package com.eventflow.model.dto.user;
 
 import com.eventflow.model.entity.User;
 
+import jakarta.annotation.Generated;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.time.LocalDateTime;
 
+@Builder
 public record UserResponse(
 		Long id,
 		String name,

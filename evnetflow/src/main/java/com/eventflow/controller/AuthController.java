@@ -23,7 +23,7 @@ public class AuthController {
     private final AuthenticationManager authManager;
     private final JWTUtils jwtUtils;
     private final AuthService authService;
-
+    
     @PostMapping("/login")
     public String login(@RequestBody LoginRequest loginRequest) {
         Authentication authentication =authManager.authenticate(new UsernamePasswordAuthenticationToken(
@@ -45,7 +45,7 @@ public class AuthController {
     @PostMapping("/register")
     public String register(@RequestBody RegisterRequest registerRequest) {
         System.out.println("Password"+" "+ registerRequest.password()+" "+"Email"+" "+ registerRequest.email());
-        if (!authService.userRegister(registerRequest.name(), registerRequest.email(), registerRequest.password(), "USER")) {
+        if (!authService.userRegister(registerRequest.name(), registerRequest.email(), registerRequest.password(), registerRequest.role())) {
             throw new RuntimeException("User registration failed");
         }
         return "User registered successfully";
